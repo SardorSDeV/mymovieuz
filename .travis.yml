@@ -2,11 +2,11 @@ language: python
 python:
   - "3.8"
 env:
-  - DJANGO=3.0 DB=sqlite3
+  - DJANGO=3.0.5 DB=sqlite3
 before_install:
   - export DJANGO_SETTINGS_MODULE=DS.settings
 install:
-  - pip install -r req.txt
+  - pip install -r reqrequirements.txt
   - pip install coverage
   - pip install coveralls
 script:
